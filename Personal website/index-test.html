@@ -1,0 +1,208 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tolu's Website</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.PNG">
+    <link rel="stylesheet" href="/styles/style-test.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Jura:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d826fdd3e8.js" crossorigin="anonymous"></script>
+    </head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="#header"><img src="images/smile-memoji (2).jpg" alt="memoji" class="logo"></a>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-rectangle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-info">
+                <div class="header-text">
+                    <p>Aspiring Software Engineer</p>
+                    <h1>Hi, I'm <span>Tolu</span>walase<br>Oladosu</h1>
+                </div>
+                <div class="header-img">
+                    <img src="images/image-home.jpg" alt="">
+                </div>
+            </div>
+            <div class="extra-space"></div>
+        </div>
+    </div>
+    
+<!-----------------------------------About---------------------------------------------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-column-1">
+                    <img src="images/image_about.jpg" alt="">
+                </div>
+                <div class="about-column-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="about-me-text">
+                        Hey there, world explorer and curious mind! 🌍✨ Welcome to my little corner of the internet! 
+                        I'm Tolu, a creative and ambitious aspiring software engineer on a mission to turn ideas into reality and make the world a bit brighter, one pixel at a time! 🚀💡
+                        As a 17-year-old student/dreamer, I find endless inspiration in the beauty of art, the logic of coding, and the magic of analysing tv shows/movies. 
+                        Studying Maths and Computer Science for a level helps me keep my dreams and hopes up as they would aid me to the career path I would love to go down.
+                    
+                        <br><br>
+
+                        But hey, life isn't all serious business and hard work! 🎉 When the creative gears take a break, I'm always up for a good laugh and some good old-fashioned fun. 
+                        I'm a Football enthusiast, a jollof rice connoisseur, and an avid <a href="https://avatar.fandom.com/wiki/Avatar:_The_Last_Airbender" target="_blank">Avatar: The Last Airbender</a> fan! 
+                        Enough about me for now - I'm thrilled to hear about you! Let's connect and collaborate on exciting projects or simply share some quirky stories over a virtual cup of coffee ☕. 
+                        Feel free to explore my website and get in touch! Let's create something extraordinary together! 
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Website app Development using HTML, CSS and Javascript</li>
+                            <li><span>Game Development</span><br>Game Development in training using python</li>
+                            <li><span>Photography</span><br>Capturing pictures with my mini camera</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span>2021-2024</span><br>Trinity Church of England High School</li>
+                            <li><span>2017-2021</span><br>Dowen College Lagos</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------------------Projects----------------------------------->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/calculator-img.jpg" alt="">
+                    <div class="layer">
+                        <h3>Calculator</h3>
+                        <p>Using HTML and CSS i was able to create an aesthetic looking calculator in a light green theme, THis helped improve my UI/UX designing capability and further 
+                            improved my coding skills.
+                        </p>
+                        <a href="calculator.html" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/budget.jpg" alt="">
+                    <div class="layer">
+                        <h3>Budget Expense</h3>
+                        <p>This website documents your daily/monthly income and tracks how much you have saved or spent depending on your 
+                            inputs.
+                            <span class="in-making">(In the making)</span>
+                        </p>
+                        
+                    </div>
+                </div>
+                
+                <div class="work">
+                    <img src="images/tile-based-game.webp" alt="">
+                    <div class="layer">
+                        <h3>Tile-based game</h3>
+                        <p>Using Python and Pygame to create a game for  y Computer science A-Level project
+                            <span class="in-making">(In the making)</span>
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+            <!--<a href="#" class="btn">See more</a>-->
+        </div>
+    </div>
+
+
+    <!-----------------------Contact----------------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-paper-plane"></i> toludosh@gmail.com</p>
+                    <p><i class="fa-solid fa-mobile-screen"></i> 07404286096</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/tolu.dosh/?hl=en-gb" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/toluwalase-o-836433266/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.youtube.com/channel/UChoPaoMSS-VBgzj3dGd9DIg" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                    <a href="images/OT  CV..docx" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------------------Copyright----------------------------------->
+<div class="copyright">
+     <p>Copyright © Tolu. Made from scratch by me :)</p>
+</div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-content");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+    
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwdoIbr_FbKy1-EVNyMMvWjSBc4EdbcLABezan3YVWsi5r96c07nU5gJGxKsGfrYXBn/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+  
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML= "Message Sent successfully!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+  </script>
+</body>
+</html>
